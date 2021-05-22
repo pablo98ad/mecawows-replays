@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ArticleRequest;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Log;
 
 class ArticleController extends Controller
 {
@@ -32,6 +33,7 @@ class ArticleController extends Controller
      */
     public function publishedArticles()
     {
+        Log::debug('DpublishedArticles');
         return Article::loadAllPublished();
     }
 
@@ -43,6 +45,8 @@ class ArticleController extends Controller
      */
     public function publishedArticle($slug)
     {
+        Log::debug('DpublishedArticles');
+
         return Article::loadPublished($slug);
     }
 

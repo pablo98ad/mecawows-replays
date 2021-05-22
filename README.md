@@ -47,22 +47,15 @@ run following commands
 
 open browser and check the following address
 
-`http://localhost:8100`
-
-TODO:
-
-- [x] Add Redux
-- [x] Add Laravel Sanctum for authentication
-- [x] User Login
-- [x] User Register
-- [x] Users Crud
-- [x] Articles Crud
-- [x] Form validation Client and Server
-- [ ] Reset Password
-- [x] Tests
-- [x] Upgrade to Laravel 7
-- [x] Upgrade to React 16.13
-- [x] docker
+`http://localhost:8000`
 
 
+## Useful Comands
 
+
+`php artisan cache:clear`
+`php artisan config:clear`
+`php artisan clear-compiled`
+`php artisan optimize:clear`
+
+`php artisan cron:refresh-database`

@@ -31,10 +31,11 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot();
-
+/*
         RateLimiter::for('api', function (Request $request) {
-            return Limit::perMinute(60);
-        });
+            //return Limit::perMinute(600000);
+           Limit::none();
+        });*/
     }
 
     /**

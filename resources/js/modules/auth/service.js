@@ -33,7 +33,9 @@ export function login(credentials) {
         .then(() => {
           Http.post('login', credentials)
             .then(res => {
+              console.log('credentials:::',credentials);
               const data = Transformer.fetch(res.data)
+              console.log('lo que da el logidn:::',data, res);
               dispatch(authActions.authLogin(data.accessToken))
               return resolve()
             })
